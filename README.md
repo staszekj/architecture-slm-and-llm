@@ -7,6 +7,14 @@ Rozwiązanie łączy dwa modele:
 
 Całość orkiestruje **LangGraph**. Zlecenia przychodzą z chatu (człowiek) albo przez FastAPI (maszyna). SLM, IMAP, kalendarz i inne systemy są dostępne jako narzędzia MCP, a dokumenty firmy przez RAG.
 
+## Dlaczego po polsku
+
+Dokumentacja jest po polsku, bo SLM jest trenowany na polskich wątkach mailowych. Modelem bazowym jest **Bielik**, darmowy model, który dobrze zna język polski. Ten sam trening można przeprowadzić w innym języku. Wtedy warto wybrać model bazowy, który dobrze zna ten język, i na nim wytrenować SLM.
+
+## Proces biznesowy to tylko przykład
+
+Problem „podejmowanie decyzji o zdarzeniu z obiektem turystycznym na podstawie maili” jest **przykładem procesu biznesowego**, a nie granicą rozwiązania. Architektura (wyspecjalizowany SLM jako narzędzie MCP, duży LLM jako mózg, LangGraph jako orkiestrator) pozostaje taka sama dla innych procesów. Mając wystarczająco dużo danych z innego procesu, niekoniecznie maili, można wytrenować SLM dla tego procesu.
+
 ## Dokumenty
 
 | # | Dokument | Zawartość |
