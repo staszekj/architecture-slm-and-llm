@@ -91,7 +91,9 @@ sequenceDiagram
     actor U as Człowiek (Chat)
     participant G as LangGraph
     participant L as Duży LLM
-    participant S as mcp-slm
+    box rgb(230, 244, 234) SLM
+        participant S as mcp-slm
+    end
     participant I as mcp-imap
     participant C as mcp-calendar
     participant O as mcp-other (CRM)
